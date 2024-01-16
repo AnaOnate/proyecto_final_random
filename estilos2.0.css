@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display&family=Roboto&family=Salsa&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     background-color: #24252a;
 }
 
@@ -16,6 +22,7 @@ h2{
     color: #eaeaea;
     font-weight: 600;
     font-size: 2em;
+    font-family: 'Playfair Display', serif;
     
 }
 h3 {
@@ -24,10 +31,17 @@ h3 {
     font-size: medium;
     font-size: 1.9em;}
 
-div {
+    p {
+        line-height: 1.6;
+
+    }
+
+.content {
+    font-family: 'Roboto', sans-serif ;
     color: #edf0f1;
     font-size: 1em ;
-    padding-left: 20px;
+    align-items: center;
+    padding: 30px 10%;
 
 }
 
@@ -50,6 +64,7 @@ header {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    background-color: #24252a;
 
 }
 .logo {
@@ -85,3 +100,88 @@ button{
 button:hover{
 background-color: rgba(68, 49, 141, 0);
 }
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #121318;
+    padding: 60px 5%;
+}
+ul { 
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 10px;
+}
+.footer-col h4 {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 1em;
+    font-family:'Salsa', cursive;
+    color: #d93f87;
+    text-transform: capitalize;
+
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #8165a6;
+    height: 2px;
+    width: 30px;
+}
+
+ul.footer li:not(:last-child){
+    margin-bottom: 8px;
+
+}
+ul.footer li a {
+    display:block;
+    font-size: .8em;
+    text-transform: capitalize;
+    color: gray;
+    transition: 0.4s;
+}
+ul.footer li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: #edf0f1;
+    background-color: #d93f87;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+
+}
+.links a:hover{
+    background-color: #44318d;
+}
+@media(max-width: 740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::before{
+        all: unset;
+    }
+}
+
+@media(max-width:555px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
