@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display&family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+
+h1{ 
+    font-size: 2.5em;
+    font-weight: 800;
+
+}
+
+h2{
+    color: #eaeaea;
+    font-weight: 600;
+    font-size: 2em;
+    
+}
+h3 {
+    color: #e1e1e1;
+    font-weight: 400;
+    font-size: medium;
+    font-size: 1.9em;}
+
+div {
+    color: #edf0f1;
+    font-size: 1em ;
+    padding-left: 20px;
+
+}
+
+
+
+li, a, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    /* sticky nav styles */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+.logo {
+    cursor: pointer;
+    width: 15%;
+}
+
+
+
+.nav_links {
+    list-style: none;
+
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: #ba9ae4;
+}
+button{
+    padding: 10px 30px;
+    background-color: rgba(68, 49, 141, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+button:hover{
+background-color: rgba(68, 49, 141, 0);
+}
